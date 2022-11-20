@@ -19,7 +19,7 @@ public class UserService {
         return userRepo.save(user);
     }
 
-    public List<User> crateUser(List<User> users) {
+    public List<User> crateUsers(List<User> users) {
         return userRepo.saveAll(users);
     }
 
