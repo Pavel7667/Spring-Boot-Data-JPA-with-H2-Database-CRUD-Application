@@ -1,7 +1,7 @@
-package com.spring.controller;
+package com.spring.jpa.controller;
 
-import com.spring.entity.User;
-import com.spring.service.UserService;
+import com.spring.jpa.entity.User;
+import com.spring.jpa.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/addUser")
+    @PostMapping("/common")
     public User addUser(@RequestBody User user) {
         return userService.crateUser(user);
     }
